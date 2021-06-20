@@ -1,0 +1,430 @@
+:root {
+    --bg: rgba(24, 24, 24, 1);
+    --bg-nav: rgba(32, 32, 32, 1);
+
+    --txt-nav: pink;
+    --txt-lightgrey: lightgray;
+
+    --ff-ubuntu: "Ubuntu", sans-serif;
+    --ff-inconsolata: "Inconsolata", sans-serif;
+    --ff-droidsans: "Droid Sans Mono", sans-serif;
+    --ff-courier: "Courier", serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    font-family: var(--ff-ubuntu);
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    background: var(--bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.page-container {
+    flex-grow: 1;
+}
+.page-header, .page-footer {
+    flex-shrink: 0;
+}
+
+section {
+    overflow: auto;
+    padding: 1rem 2rem 1rem;
+}
+.neutral {
+    color: white;
+}
+.dark {
+    background: black;
+    color: white;
+}
+.light {
+    background: white;
+    color: black;
+}
+
+
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: 120%;
+}
+h1 {
+    margin: 0.7em;
+}
+
+/* --- RESPONSIVE IMG --- */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- RESPONSIVE NAVIGATION BAR --- */
+header {
+    background: var(--bg-nav);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--bg-nav);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+nav a:hover {
+    color: var(--txt-nav);
+}
+.nav-toggle {
+    display: none;
+}
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 300ms;
+}
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+/* --- RESPONSIVE PARALLAX --- */
+.parallax {
+    background-color: grey;
+    background-image: url(../img/microcontrollers.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 13rem 0;
+    overflow-x: hidden;
+	/* overflow-y: scroll; */
+	perspective: 10px;
+}
+.parallax-text{
+    position: absolute;
+    top: 8rem;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    text-transform:uppercase;
+    line-height: 120%;
+  }
+.parallax-text .border{
+    background-color: var(--bg);
+    color:#fff;
+    padding: 2vh;
+    margin: 3.5em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+/* --- RESPONSIVE INTRODUCTION --- */
+.intro {
+    margin: 1em;
+    text-align: left;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+.intro h2 {
+    font-family: var(--ff-inconsolata);
+}
+.intro h5 {
+    font-family: var(--ff-courier);
+    font-weight: normal;
+    color: var(--txt-nav);
+}
+.intro p {
+    font-family: var(--ff-droidsans);
+}
+.column {
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 1em 1em 1em 1em;
+}
+
+/* --- RESPONSIVE SOCIAL --- */
+.social {
+    display: grid;
+    grid-template: auto auto auto;
+}
+.social img {
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.02;
+}
+.social img:hover {
+    opacity: 1;
+}
+.img-item1 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+.img-item2 {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+.img-item3 {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+}
+.img-item4 {
+    grid-column: 4;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- RESPONSIVE PROJECTS --- */
+.proj {
+    display: grid;
+    grid-template: auto auto auto;
+}
+.proj img:hover {
+    opacity: 1;
+}
+.proj img {
+    size: auto;
+    opacity: 0.2;
+}
+.uni-proj-1 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+.uni-proj-2 {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+.uni-proj-3 {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+}
+.uni-proj-4 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+.uni-proj-5 {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+.uni-proj-6 {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- RESPONSIVE CONTACT --- */
+.contact {
+    margin: 1em;
+    text-align: center;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+.contact h4 {
+    font-family: var(--ff-droidsans);
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+.button_type {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.8em 1.4em;
+    border: 0.1em solid var(--txt-nav);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    transition: all 0.25s;
+    color: var(--txt-nav);
+}
+.button_type:hover{
+    color: var(--bg);
+    background-color: var(--txt-nav);
+}
+
+/* --- RESPONSIVE FOOTER --- */
+.page-footer {
+    height: 3em;
+    flex-shrink: 0;
+    background-color: var(--bg-nav);
+    padding: 1rem 0rem 1rem;
+}
+
+
+/* --- UPSCALING FOR LARGER SCREENS --- */
+@media screen and (max-width: 800px){
+    .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+  
+}
+@media screen and (min-width: 1000px) {
+    /* --- NAVIGATION BAR --- */
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+    section {
+        padding: 2rem 10rem 2rem;
+    }
+    .logo {
+        grid-column: 2 / 2;
+    }
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: var(--txt-nav);
+        position: absolute;
+        bottom: -.30em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: right;
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1,1);
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* --- RESPONSIVE INTRODUCTION --- */
+    .intro {
+        font-size: 1.4rem;
+    }
+    .column {
+        width: 33.33%;
+        float: left;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column img {
+        width: 20rem;
+        display: block;
+        border-radius: 30px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    .img-item1{
+        grid-column: 1;
+    }
+    .img-item2{
+        grid-column: 2;
+    }
+    .img-item3{
+        grid-column: 3;
+    }
+    .img-item4{
+        grid-column: 4;
+    }
+    
+}
+/* --- UPSCALING FOR LARGER SCREENS --- */
