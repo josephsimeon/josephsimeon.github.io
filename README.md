@@ -1,9 +1,11 @@
 # josephsimeon.github.io
 
-README will contain the planning design for the website, this will be the best way to organise issue and tracking as
-well as give a defined plan on how I want the website to function.
+Website
 
 ## Planning
+
+README will contain the planning design for the website, this will be the best way to organise issue and tracking as
+well as give a defined plan on how I want the website to function.
 
 ### Features
 
