@@ -15,7 +15,7 @@ well as give a defined plan on how I want the website to function.
     * Socials<sup>3</sup>
 * Window
     * Socials<sup>4</sup>
-    * Portfolio
+    * Portfolio<sup>5</sup>
         * About
             * CV
             * Contact
@@ -32,3 +32,5 @@ well as give a defined plan on how I want the website to function.
 <sup>3</sup> Socials are only shown when the screen is not large enough, the socials will sit in the middle of the header.
 
 <sup>4</sup> Socials sit statically on the right hand side of the window until there isn't room.
+
+<sup>5</sup>Portfolio uses a parallax like affect that will scroll down leaving everything else to remain static.
