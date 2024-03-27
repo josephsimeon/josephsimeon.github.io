@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding-bottom: 20px;
     background: Cornsilk;
     display: flex;
     justify-content: space-between;
@@ -22,9 +22,25 @@
 
 .logo {
     font-size: 18px;
+    padding-top: 20px;
+    padding-left: 100px;
     color: Black;
     text-decoration: none;
     font-weight: 700;
+    z-index: 999;
+}
+
+#checkbox,
+#icon {
+    padding-top: 20px;
+    padding-right: 100px;
+    display: none;
+    z-index: 999;
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-right: 100px;
 }
 
 .navbar a {
@@ -43,7 +59,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: Black;
+    background: Cornsilk;
     transition: .3s;
 }
 
@@ -57,14 +73,29 @@
     background: DarkOrange;
 }
 
-@media screen and (max-width: 767px) {
-.sidebar {
+@media screen and (max-width: 787px)
+{
+
+#checkbox:checked~.navbar {
+    display: flex;
+}
+
+#icon {
+    display: block;
+}
+
+.navbar {
     position: fixed;
     top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: White;
+    right 0;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: Cornsilk;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: none;
 }
+
 }
