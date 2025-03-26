@@ -23,3 +23,5 @@ Developer portfolio, showcasing skills and projects.
     - HTML, CSS, Jekyll.
 - [Grocery list web application](https://josephsimeon.github.io/grocery-list/).
     - HTML, CSS, JavaScript, React.
+- [Portable terminal](https://github.com/josephsimeon/portable-terminal).
+    - Linux,CAD.
