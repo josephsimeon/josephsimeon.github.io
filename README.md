@@ -7,30 +7,13 @@ Developer portfolio, showcasing skills and projects.
 ## Portfolio
 - Single webpage portfolio.
     - Showcase HTML, CSS, and JavaScript to design a single page portfolio.
-
-### Layout
-#### Header
-##### Content
-- CV.
-
-### Introduction block
-##### Content
-- Image, name, title, email, location, social links (linkedin, github, codepen).
-##### Style
-
-#### About block
-##### Content
-- About, knowledge, skills, learning.
-##### Style
-
-#### Showcase block
-##### Content
-- Projects.
-##### Style
-
-#### Footer
-##### Content
-- Leave blank.
+        - Sans-serif font, in the generic tech style such as Google Font's Open Sans.
+    - CV as a button on the top right corner that is sticky and will move with scroll.
+    - Light and dark mode toggle at the top left corner that is fixed.
+    - Introduction block for image, name, title, email, location, and social links.
+        - Links to linkedin, github, and pencode.
+    - About block for about, knowledge, skills, and learning.
+    - Projects block.
 
 ## Showcasing
 ### Photography portfolio and blog
