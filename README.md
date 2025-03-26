@@ -16,10 +16,7 @@ Developer portfolio, showcasing skills and projects.
     - Projects block.
 
 ## Showcasing
-### Photography portfolio and blog
-[Photography portfolio website](https://josephsimeon.github.io/photography-portfolio/).
+- [Photography portfolio website](https://josephsimeon.github.io/photography-portfolio/).
     - HTML, CSS, Jekyll.
-
-### Grocery list 
-[Grocery list web application](https://josephsimeon.github.io/grocery-list/).
+- [Grocery list web application](https://josephsimeon.github.io/grocery-list/).
     - HTML, CSS, JavaScript, React.
