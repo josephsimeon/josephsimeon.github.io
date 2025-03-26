@@ -1,12 +1,22 @@
 # josephsimeon.github.io
 Portfolio linking to different web projects
 
+## Description
+Developer portfolio, showcasing skills and projects.
 
-## Photography portfolio and blog
-[Photography portfolio website](https://josephsimeon.github.io/photography-portfolio/) is a static
-website that utilises jekyll enabled Github Pages to show a stylised portfolio of my photography
-that also acts like blog.
+## Portfolio
+- Single webpage portfolio.
+    - Showcase HTML, CSS, and JavaScript to design a single page portfolio.
+        - Sans-serif font, in the generic tech style such as Google Font's Open Sans.
+    - CV as a button on the top right corner that is sticky and will move with scroll.
+    - Light and dark mode toggle at the top left corner that is fixed.
+    - Introduction block for image, name, title, email, location, and social links.
+        - Links to linkedin, github, and pencode.
+    - About block for about, knowledge, skills, and learning.
+    - Projects block.
 
-## Grocery list 
-[Grocery list web application](https://josephsimeon.github.io/grocery-list/) that will allow a user 
-to create a grocery list that will use AI API to categorise the list entry to a category.
+## Showcasing
+- [Photography portfolio website](https://josephsimeon.github.io/photography-portfolio/).
+    - HTML, CSS, Jekyll.
+- [Grocery list web application](https://josephsimeon.github.io/grocery-list/).
+    - HTML, CSS, JavaScript, React.
