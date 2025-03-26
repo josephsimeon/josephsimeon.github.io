@@ -10,10 +10,27 @@ Developer portfolio, showcasing skills and projects.
 
 ### Layout
 #### Header
-#### First block in body
-#### Second block in body
-#### Third block in body
+##### Content
+- CV.
+
+### Introduction block
+##### Content
+- Image, name, title, email, location, social links (linkedin, github, codepen).
+##### Style
+
+#### About block
+##### Content
+- About, knowledge, skills, learning.
+##### Style
+
+#### Showcase block
+##### Content
+- Projects.
+##### Style
+
 #### Footer
+##### Content
+- Leave blank.
 
 ## Showcasing
 ### Photography portfolio and blog
