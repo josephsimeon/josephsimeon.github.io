@@ -13,6 +13,9 @@ Developer portfolio, showcasing skills and projects.
     - Introduction block for image, name, title, email, location, and social links.
         - Links to linkedin, github, and pencode.
     - About block for about, knowledge, skills, and learning.
+        - Embedded software engineer with experience in embedded software, firmware, & UX programming.
+        - Programming application, drivers, subsystems at bare-metal and RTOS.
+        - Industry experience in STM32 and ST's TouchGFX framework.
     - Projects block.
 
 ## Showcasing
