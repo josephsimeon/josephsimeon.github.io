@@ -50,3 +50,36 @@ header {
     border-color: var(--cv-button-hover);
     box-shadow: 0 0 1em 0 var(--cv-button-hover);
 }
+
+/* -- main -- */
+
+main {
+    /* */
+}
+
+/* -- info block -- */
+
+.info_block {
+    /* */
+}
+
+.info_block_image {
+    /* */
+}
+
+.info_block_name {
+    /* */
+}
+
+.info_block_title {
+    /* */
+}
+
+.info_block_email {
+    /* */
+}
+
+.info_block_location {
+    /* */
+}
+
