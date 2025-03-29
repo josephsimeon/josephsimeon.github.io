@@ -1,0 +1,50 @@
+/* imported fonts */
+
+:root {
+    --background: darkslategray;
+    --cv-button: orange;
+    --cv-button-hover: yellow;
+    --cv-button-highlight: white;
+}
+
+* {
+    /* */
+}
+
+html {
+    /* */
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* -- cv button -- */
+
+header {
+    display: grid;
+    justify-items: right;
+}
+
+.sticky-header {
+    position: sticky;
+}
+
+.cv_button {
+    background: none;
+    border: 2px solid;
+    border-radius: 0.75em 0 0.75em 0.5em;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+.shine_button {
+    color: var(--cv-button);
+    border-color: var(-cv-button);
+}
+.shine_button:hover {
+    color: var(--cv-button-highlight);
+    border-color: var(--cv-button-hover);
+    box-shadow: 0 0 1em 0 var(--cv-button-hover);
+}
