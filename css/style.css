@@ -32,7 +32,8 @@ header {
 .cv_button {
     background: none;
     border: 2px solid;
-    line height: 1;
+    border-radius: 0.75em 0.5em 0.75em 0.5em;
+    line-height: 1;
     margin: 0.5em;
     padding: 0.5em 1em;
 }
