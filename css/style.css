@@ -38,5 +38,11 @@ header {
 }
 
 .shine_button {
-    /* */
+    color: var(--cv-button);
+    border-color: var(-cv-button);
+}
+.shine_button:hover {
+    color: var(--cv-button-highlight);
+    border-color: var(--cv-button-hover);
+    box-shadow: 0 0 1em 0 var(--cv-button-hover);
 }
