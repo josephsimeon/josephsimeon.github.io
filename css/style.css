@@ -1,7 +1,10 @@
 /* imported fonts */
 
 :root {
-    /* */
+    --background: darkslategray;
+    --cv-button: orange;
+    --cv-button-hover: yellow;
+    --cv-button-highlight: white;
 }
 
 * {
