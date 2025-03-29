@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    /* */
+    background-color: var(--background);
 }
 
 /* -- cv button -- */
