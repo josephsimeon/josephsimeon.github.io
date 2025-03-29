@@ -22,11 +22,12 @@ body {
 /* -- cv button -- */
 
 header {
-    /* */
+    display: grid;
+    justify-items: right;
 }
 
 .sticky-header {
-    /* */
+    position: sticky;
 }
 
 .cv_button {
