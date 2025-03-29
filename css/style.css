@@ -19,12 +19,14 @@ body {
     background-color: var(--background);
 }
 
-/* -- cv button -- */
+/* -- header -- */
 
 header {
     display: grid;
     justify-items: right;
 }
+
+/* -- cv button -- */
 
 .sticky-header {
     position: sticky;
