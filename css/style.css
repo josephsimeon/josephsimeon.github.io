@@ -9,6 +9,7 @@
     --cv-button: orange;
     --cv-button-hover: yellow;
     --cv-button-highlight: white;
+    --block-background: slategrey;
 }
 
 * {
@@ -67,6 +68,13 @@ main {
 /* -- info block -- */
 
 .info_block {
-    /* */
+    background: var(--block-background);
+    height: auto;
+    border-color: var(--block-background);
+    border: 2px solid;
+    border-color: var(--block-background);
+    border-radius: 1em 1em 1em 1em;
+    padding: 2em;
+    margin: 1em auto;
 }
 
