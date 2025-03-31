@@ -1,6 +1,10 @@
 /* imported fonts */
 
 :root {
+    /* fonts */
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, san-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* colours */
     --background: darkslategray;
     --cv-button: orange;
     --cv-button-hover: yellow;
@@ -36,7 +40,10 @@ header {
     background: none;
     border: 2px solid;
     border-radius: 0.75em 0 0.75em 0.5em;
+
+    font-family: var(--system-ui);
     line-height: 1;
+
     margin: 0.5em;
     padding: 0.5em 1em;
 }
