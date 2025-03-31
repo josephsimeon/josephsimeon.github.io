@@ -69,12 +69,19 @@ main {
 
 .info_block {
     background: var(--block-background);
+
+    max-width: 700px;
+    width: 70%;
     height: auto;
+
     border-color: var(--block-background);
     border: 2px solid;
     border-color: var(--block-background);
     border-radius: 1em 1em 1em 1em;
+
     padding: 2em;
     margin: 1em auto;
 }
+
+
 
