@@ -123,6 +123,19 @@ main {
     grid-column: span 2;
 }
 
+.person {
+    display: flex;
+}
+
+.person .email, .person .location {
+    display: flex;
+    padding: 0.5em;
+}
+
+.person .email .sub-header, .person .location .sub-header {
+    padding: 0.2em 0 0 0.5em;
+}
+
 @media(max-width: 600px) {
     .info {
         grid-template-columns: 75px repeat(2, 1fr);
@@ -145,6 +158,14 @@ main {
 
     .info .sub-header {
         padding: 0.25em 0 0 0.5em;
+    }
+
+    .person {
+        display: block;
+    }
+
+    .person .email, .person .location {
+        padding: 0.5em 0 0 0;
     }
 }
 
