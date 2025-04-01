@@ -5,6 +5,7 @@
     /* colours */
     --background: #1b1b1b;
     --block-background: #2b2b2b;
+    --block-highlight: #3b3b3b;
 
     --cv-button: orange;
     --cv-button-hover: yellow;
@@ -73,10 +74,10 @@ main {
     width: 80%;
     height: auto;
 
-    border-color: var(--block-background);
-    border: 2px solid;
-    border-color: var(--block-background);
+    border: 1px solid;
+    border-color: var(--block-highlight);
     border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 0 0.5em 0 var(--block-highlight);
 
     padding: 0.5em;
     margin: 1em auto;
