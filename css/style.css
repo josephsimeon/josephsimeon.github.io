@@ -136,6 +136,10 @@ main {
     padding: 0.2em 0 0 0.5em;
 }
 
+.info_socials a {
+    text-decoration: none;
+}
+
 @media(max-width: 600px) {
     .info_card img {
         max-width: 75px;
