@@ -67,7 +67,7 @@ main {
 .block {
     background: var(--block-background);
     max-width: 700px;
-    min-width: 325px;
+    min-width: 300px;
     width: 80%;
     height: auto;
     border: 1px solid;
@@ -86,6 +86,7 @@ main {
 .info {
     display: grid;
     grid-template-columns: 100px repeat(2, 1fr);
+    grid-auto-rows: auto-fit;
 }
 
 .info img {
@@ -94,7 +95,7 @@ main {
     height: 100%;
     border-radius: 30%;
     overflow: hidden;
-    grid-row: span 2;
+    grid-row: span 4;
 }
 
 .text {
@@ -106,8 +107,16 @@ main {
     font-size: 2em;
 }
 
+.info .header {
+    padding: 0.25em 0 0 0.25em;
+}
+
 .sub-header {
     font-size: 1em:
+}
+
+.info .sub-header {
+    padding: 0.5em 0 0 0.5em;
 }
 
 .info .header, .info .sub-header {
@@ -121,7 +130,6 @@ main {
 
     .info_card img {
         max-width: 75px;
-        height: 75px;
     }
 
     .header {
@@ -130,6 +138,13 @@ main {
 
     .sub-header {
         font-size: 0.9em;
+    }
+    .info .header {
+        padding: 0.1em 0 0 0.25em;
+    }
+
+    .info .sub-header {
+        padding: 0.25em 0 0 0.5em;
     }
 }
 
