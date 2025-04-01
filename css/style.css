@@ -69,7 +69,8 @@ main {
     background: var(--block-background);
 
     max-width: 700px;
-    width: 70%;
+    min-width: 300px;
+    width: 80%;
     height: auto;
 
     border-color: var(--block-background);
