@@ -136,6 +136,15 @@ main {
     padding: 0.2em 0 0 0.5em;
 }
 
+.socials {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
 @media(max-width: 600px) {
     .info {
         grid-template-columns: 75px repeat(2, 1fr);
