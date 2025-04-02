@@ -33,10 +33,6 @@ header {
 
 /* -- cv button -- */
 
-.sticky-header {
-    position: sticky;
-}
-
 .cv_button {
     background: none;
     border: 2px solid;
