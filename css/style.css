@@ -145,6 +145,15 @@ main {
     text-decoration: none;
 }
 
+.about .header {
+    padding: 0.1em 0 0.25em 0;
+}
+
+.about .sub-header {
+    text-align: left;
+    padding: 0.1em 0 0 0;
+}
+
 @media(max-width: 600px) {
     .info {
         grid-template-columns: 75px repeat(2, 1fr);
@@ -175,6 +184,14 @@ main {
 
     .person .email, .person .location {
         padding: 0.5em 0 0 0;
+    }
+
+    .about .header {
+        padding: 0.1em 0 0.1em 0;
+    }
+
+    .about .sub-header {
+        padding: 0;
     }
 }
 
