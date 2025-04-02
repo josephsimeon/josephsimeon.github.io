@@ -35,6 +35,7 @@ header {
     border-radius: 0.75em 0 0.75em 0.5em;
     font-family: var(--system-ui);
     line-height: 1;
+    margin: 0 0.5em;
     padding: 0.5em 1em;
 }
 
@@ -132,6 +133,10 @@ main {
 
 .socials a {
     text-decoration: none;
+}
+
+.socials svg:hover path {
+    fill: #ffa348;
 }
 
 .about .header {
