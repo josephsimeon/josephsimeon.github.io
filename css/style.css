@@ -13,11 +13,9 @@
 }
 
 * {
-    /* */
 }
 
 html {
-    /* */
 }
 
 body {
@@ -25,21 +23,18 @@ body {
 }
 
 /* -- header -- */
-
 header {
     display: grid;
     justify-items: right;
 }
 
 /* -- cv button -- */
-
 .cv_button {
     background: none;
     border: 2px solid;
     border-radius: 0.75em 0 0.75em 0.5em;
     font-family: var(--system-ui);
     line-height: 1;
-    margin: 0.5em;
     padding: 0.5em 1em;
 }
 
@@ -54,9 +49,7 @@ header {
 }
 
 /* -- main -- */
-
 main {
-    /* */
 }
 
 /* -- info block -- */
@@ -71,7 +64,7 @@ main {
     border-radius: 1em 1em 1em 1em;
     box-shadow: 0 0 0.5em 0 var(--block-highlight);
     padding: 0.5em;
-    margin: 1em auto;
+    margin: 1.5em auto;
 }
 
 .inner_block {
