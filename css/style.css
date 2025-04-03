@@ -65,8 +65,10 @@ main {
     display: block;
     text-align: center;
     background: rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: 80px;
     border-radius: 1em 1em 1em 1em;
-    padding: 0.75em;
+    padding: 1em;
 }
 
 .flex {
