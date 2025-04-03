@@ -138,7 +138,7 @@ main {
 
 .person .email, .person .location {
     display: flex;
-    padding: 0.5em;
+    padding: 0.25em 0 0 0.5em;
 }
 
 .person .email .sub-header, .person .location .sub-header {
@@ -158,12 +158,13 @@ main {
     fill: #ffa348;
 }
 
-.about .header, .about .sub-header {
-    padding: 0.5em 0 0 0.5em;
+.about .header {
+    padding: 0.5em 0 0 0.25em;
 }
 
 .about .sub-header {
     text-align: left;
+    padding: 0.5em 0 0 0.5em;
 }
 
 .knowledge svg {
