@@ -20,11 +20,9 @@ body {
     background-color: var(--background);
 }
 
-/* -- main -- */
 main {
 }
 
-/* -- info block -- */
 .block {
     background: var(--block-background);
     max-width: 700px;
