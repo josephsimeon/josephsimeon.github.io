@@ -35,14 +35,11 @@ main {
     box-shadow: 0 0 0.5em 0 var(--block-highlight);
     padding: 0.5em;
     margin: 1.5em auto;
-}
-
-.inner_block {
     display: block;
     padding: 1em;
 }
 
-.block_separator {
+.block-separator {
     background: var(--accent);
     width: 70px;
     height: 5px;
@@ -50,7 +47,7 @@ main {
     margin: 0.75em 1em;
 }
 
-.internal_block {
+.inner-block {
     display: grid;
     grid-template-columns: 50px repeat(2, 1fr);
     grid-auto-rows: auto-fit;
@@ -134,7 +131,7 @@ main {
     text-align: center;
 }
 
-.cv_button {
+.cv-button {
     background: none;
     border: 2px solid;
     border-radius: 0.75em 0 0.75em 0.5em;
@@ -144,11 +141,11 @@ main {
     padding: 0.5em 1em;
 }
 
-.shine_button {
+.shine-button {
     color: var(--accent);
     border-color: var(--accent);
 }
-.shine_button:hover {
+.shine-button:hover {
     color: var(--cv-button-hover);
     border-color: var(--cv-button-hover);
     box-shadow: 0 0 1em 0 var(--cv-button-hover);
@@ -185,27 +182,19 @@ main {
     display: inline-block;
 }
 
-.learning {
-    display: inline-block;
-}
-
 @media(max-width: 600px) {
-    .block_separator {
+    .block-separator {
         width: 50px;
         border-radius: 1em 1em 1em 1em;
         margin: 0.5em 0.75em;
     }
-    .internal_block {
+    .internal-block {
         display: block;
         text-align: center;
     }
 
     .info {
         grid-template-columns: 75px repeat(2, 1fr);
-    }
-
-    .info_card img {
-        max-width: 75px;
     }
 
     .header {
