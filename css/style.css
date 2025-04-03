@@ -181,6 +181,14 @@ main {
     font-size: 0.8em;
 }
 
+.skills {
+    display: inline-block;
+}
+
+.learning {
+    display: inline-block;
+}
+
 @media(max-width: 600px) {
     .block_separator {
         width: 50px;
