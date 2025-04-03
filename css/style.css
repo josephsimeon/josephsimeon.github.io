@@ -118,6 +118,7 @@ main {
 
 .header {
     font-size: 2em;
+    font-weight: bold;
 }
 
 .info .header {
@@ -173,6 +174,15 @@ main {
 
 .knowledge .description, .knowledge .sub-description {
     grid-column: span 2;
+}
+
+.description {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.sub-description {
+    font-size: 0.8em;
 }
 
 @media(max-width: 600px) {
